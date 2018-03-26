@@ -1,4 +1,4 @@
-package com.example.kevin.websocket_stomp.socket;
+package com.example.kevin.websocket_stomp.stomp;
 
 
 import org.java_websocket.WebSocket;

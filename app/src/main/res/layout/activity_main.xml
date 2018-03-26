@@ -6,21 +6,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
     <LinearLayout
         style="?android:buttonBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
         <Button
             style="?android:buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="开始连接"
+            android:text="1、建立连接"
             android:onClick="connectStomp"/>
-
         <Button
             style="?android:buttonBarButtonStyle"
             android:layout_width="0dp"
@@ -43,23 +40,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
         <Button
             style="?android:buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="发送Connect命令"
+            android:text="2、确认连接"
             android:onClick="sendConnect"/>
-
-
-
         <Button
             style="?android:buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="发送心跳"
+            android:text="3、发送心跳"
             android:onClick="sendBeat"
             />
 
@@ -76,37 +69,44 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="开始订阅"
+            android:text="4、开始订阅"
             android:onClick="Startsubscribe"
+           />
+        <Button
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="发送消息"
+            android:onClick="sendMessage"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="?android:buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5、发送Ping"
+            android:onClick="sendPing"
             tools:ignore="OnClick" />
         <Button
             style="?android:buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="第二条订阅"
-            android:onClick="theSecondSubscribe"
+            android:text=""
             tools:ignore="OnClick" />
 
     </LinearLayout>
 
-    <Button
-        android:onClick="isConnected"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="是否连接上了？"
-        tools:ignore="OnClick" />
 
-    <Button
-        android:onClick="sendHeartBeat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="发送心跳"
-        tools:ignore="OnClick" />
-    <!--<android.support.v7.widget.RecyclerView-->
-        <!--android:id="@+id/recycler_view"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
 
-        <!--android:clipToPadding="false"/>-->
 </LinearLayout>
